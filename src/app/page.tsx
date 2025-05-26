@@ -47,6 +47,9 @@ export default function Page() {
           <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
             {DATA.summary}
           </Markdown>
+            <div className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert font-bold">
+            <Markdown>{DATA.open_work}</Markdown>
+            </div>
         </BlurFade>
       </section>
       <section id="work">
@@ -66,7 +69,6 @@ export default function Page() {
                 title={work.company}
                 subtitle={work.title}
                 href={work.href}
-                badges={work.badges}
                 period={`${work.start} - ${work.end ?? "Present"}`}
                 description={work.description}
               />
