@@ -157,7 +157,7 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
             <div className="space-y-3">
               <a
-                href="mailto:andresmaruland</Button>a1027@icloud.com"
+                href="mailto:andresmarulanda1027@icloud.com"
                 className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm"
               >
                 Contact
@@ -166,7 +166,7 @@ export default function Page() {
                 Get in Touch
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Let's build something exceptional together. I specialize in turning complex challenges into elegant solutions. Reach out to discuss your project, and let's see how we can create impact through technology.
+                Let&apos;s build something exceptional together. I specialize in turning complex challenges into elegant solutions. Reach out to discuss your project, and let&apos;s see how we can create impact through technology.
               </p>
             </div>
           </BlurFade>
