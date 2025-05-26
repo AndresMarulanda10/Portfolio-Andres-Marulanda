@@ -47,6 +47,9 @@ export default function Page() {
           <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
             {DATA.summary}
           </Markdown>
+            <div className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert font-bold">
+            <Markdown>{DATA.open_work}</Markdown>
+            </div>
         </BlurFade>
       </section>
       <section id="work">
@@ -65,8 +68,7 @@ export default function Page() {
                 altText={work.company}
                 title={work.company}
                 subtitle={work.title}
-                href={work.href}
-                badges={work.badges}
+                href={typeof work.href === 'string' ? work.href : undefined}
                 period={`${work.start} - ${work.end ?? "Present"}`}
                 description={work.description}
               />
@@ -137,7 +139,6 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY * 12 + id * 0.05}
               >
                 <ProjectCard
-                  href={project.href}
                   key={project.title}
                   title={project.title}
                   description={project.description}
@@ -145,7 +146,6 @@ export default function Page() {
                   tags={project.technologies}
                   image={project.image}
                   video={project.video}
-                  links={project.links}
                 />
               </BlurFade>
             ))}
@@ -156,16 +156,17 @@ export default function Page() {
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
             <div className="space-y-3">
-              <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+              <a
+                href="mailto:andresmaruland</Button>a1027@icloud.com"
+                className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm"
+              >
                 Contact
-              </div>
+              </a>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                 Get in Touch
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Want to chat? Just shoot me a dm{" "}
-                and I&apos;ll respond whenever I can. I will ignore all
-                soliciting.
+                Let's build something exceptional together. I specialize in turning complex challenges into elegant solutions. Reach out to discuss your project, and let's see how we can create impact through technology.
               </p>
             </div>
           </BlurFade>

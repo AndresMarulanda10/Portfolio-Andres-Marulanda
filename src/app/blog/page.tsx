@@ -6,8 +6,8 @@ import { CalendarIcon, Clock } from "lucide-react";
 import PostImage from "@/components/blog/post-image";
 
 export const metadata = {
-  title: "Blog | Artículos sobre desarrollo y tecnología",
-  description: "Explorando ideas sobre desarrollo de software, tecnología y crecimiento profesional.",
+  title: "Blog | Articles on development and technology",
+  description: "Exploring ideas about software development, technology, and professional growth.",
 };
 
 const BLUR_FADE_DELAY = 0.04;
@@ -15,16 +15,16 @@ const BLUR_FADE_DELAY = 0.04;
 export default async function BlogPage() {
   const posts = await getBlogPosts();
   
-  // Ordenar posts por fecha (más recientes primero)
+  // Sort posts by date (most recent first)
   const sortedPosts = posts.sort((a, b) => {
     return new Date(b.metadata.publishedAt).getTime() - new Date(a.metadata.publishedAt).getTime();
   });
-  
-  // Obtener posts destacados (puedes usar una propiedad en el metadata o los 2 más recientes)
+
+  // Get featured posts (you can use a property in the metadata or the 2 most recent ones)
   const featuredPosts = sortedPosts.slice(0, 2);
   const regularPosts = sortedPosts.slice(2);
-  
-  // Función para formatear la fecha
+
+  // Function to format the date
   const formatDate = (dateString: string) => {
     const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'long', day: 'numeric' };
     return new Date(dateString).toLocaleDateString('es-ES', options);
@@ -36,7 +36,8 @@ export default async function BlogPage() {
         <div className="text-center mb-12">
           <h1 className="font-bold text-4xl mb-3 tracking-tighter">Blog</h1>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Artículos sobre desarrollo, tecnología y mis experiencias en el mundo digital
+            Explore ideas about software development, technology and professional growth.
+            Here you will find articles that share my experience and reflections in the world of technology.
           </p>
         </div>
       </BlurFade>
@@ -45,7 +46,7 @@ export default async function BlogPage() {
       {featuredPosts.length > 0 && (
         <BlurFade delay={BLUR_FADE_DELAY * 1.5}>
           <div className="mb-16">
-            <h2 className="text-2xl font-semibold mb-6 border-b pb-2">Artículos destacados</h2>
+            <h2 className="text-2xl font-semibold mb-6 border-b pb-2">Featured Articles</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {featuredPosts.map((post, id) => (
                 <Link 
@@ -92,7 +93,7 @@ export default async function BlogPage() {
       {/* Regular Posts Section */}
       <BlurFade delay={BLUR_FADE_DELAY * 2}>
         <div>
-          <h2 className="text-2xl font-semibold mb-6 border-b pb-2">Todos los artículos</h2>
+          <h2 className="text-2xl font-semibold mb-6 border-b pb-2">All Articles</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {regularPosts.map((post, id) => (
               <BlurFade delay={BLUR_FADE_DELAY * 2 + id * 0.05} key={post.slug}>

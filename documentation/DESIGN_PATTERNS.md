@@ -207,7 +207,7 @@ async function getFullPost(slug) {
 Implementamos un patrón de fachada para simplificar operaciones complejas en una API más simple:
 
 ```tsx
-// Fachada para operaciones de blog
+// Facade for blog operations
 export const BlogAPI = {
   getAllPosts: async () => {
     return await getAllPosts("content");
