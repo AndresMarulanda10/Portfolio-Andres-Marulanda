@@ -79,7 +79,7 @@ export const DATA = {
       company: "CSI (Industrial Solutions Marketers)",
       href: [],
       location: "Bogota, Capital District, Colombia",
-      title: "Chief Technology Officer (CTO)",
+      title: "Software Engineer",
       logoUrl: "/csi_logo.svg",
       start: "October 2023",
       end: "Present",
