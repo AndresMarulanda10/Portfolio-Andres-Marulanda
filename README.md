@@ -85,4 +85,4 @@ La documentación completa está disponible en la carpeta `documentation`:
 
 ## ⚖️ Licencia
 
-Este proyecto fue creado por [Andres Marulanda](https://github.com/AndresMarulanda10) y está licenciado bajo la Licencia MIT - consulta el archivo [LICENSE](LICENSE) para más detalles.
+Este proyecto fue creado por [Andres Marulanda](https://github.com/AndresMarulanda10) y está licenciado bajo la Licencia MIT - consulta el archivo [LICENSE](LICENSE) para más detalles
