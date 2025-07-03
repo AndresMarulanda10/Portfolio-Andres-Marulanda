@@ -47,8 +47,14 @@ export default function Page() {
           <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
             {DATA.summary}
           </Markdown>
-            <div className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert font-bold">
-            <Markdown>{DATA.open_work}</Markdown>
+            </BlurFade>
+            <BlurFade delay={BLUR_FADE_DELAY * 4}>
+              <div className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert font-bold">
+                <div className="mt-3 p-2 bg-blue-100 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-900 text-sm">
+                  <Markdown className="prose prose-sm dark:prose-invert max-w-none text-blue-900 dark:text-blue-200">
+              {DATA.open_work}
+              </Markdown>
+            </div>
             </div>
         </BlurFade>
       </section>
@@ -145,7 +151,6 @@ export default function Page() {
                   dates={project.dates}
                   tags={project.technologies}
                   image={project.image}
-                  video={project.video}
                 />
               </BlurFade>
             ))}

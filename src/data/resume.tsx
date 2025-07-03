@@ -8,33 +8,21 @@ export const DATA = {
   location: "Bogota, Colombia",
   locationLink: "https://www.google.com/maps/place/bogota",
   description:
-    "CTO | Software Engineer | Leader in Technology Innovation | Specialist in Software Architecture, Big Data & AI | Passionate about Quantum Research and Quantum Computing.",
+    "Software Architect & Engineering Leader | 6+ years in Microservicios, AI/Quantum ML, Next.js, Node.js, JavaScript, TypeScript, Python.",
   summary: 
-    "Software Engineer with 10+ years transforming ideas into robust solutions. Programming since age 15, with experience across legaltech, telecommunications, and enterprise software. Passionate about building from scratch, leading teams, and exploring emerging technologies like AI and Quantum Computing.", 
+    "Software Engineer with +6 years of experience designing scalable architectures and leading multidisciplinary teams in Software Factory, startups and e-commerce. As a current architect, I have implemented microservices with Next.js, Node.js and Bun, automated critical processes (reducing operational loads by 80% and developed prediction systems with Quantum Machine Learning. Specialized in digital transformation and performance optimization in high demand environments.", 
   open_work:
-    "Available for freelance projects and high-impact remote roles.",
+    "Available for freelance projects remote roles.",
   avatarUrl: "/me.png",
   skills: [
-    "Python",
-    "Tensorflow",
-    "PyTorch",
-    "Scikit-learn",
-    "React",
-    "Next.JS",
-    "JavaScript",
-    "TypeScript",
-    "TailwindCSS",
-    "Django",
-    "Node.js",
-    "Bun",
-    "MongoDB",
-    "Supabase", 
-    "MySQL",
-    "PostgreSQL",
-    "IBM",
-    "AWS",
-    "Docker",
-    "Kubernetes",
+    "Software Architecture",
+    "Full Stack Development",
+    "Microservices",
+    "Technical Leadership",
+    "Software Development",
+    "Teaching",
+    "Agile Methodologies",
+    "Design Patterns"
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -48,21 +36,18 @@ export const DATA = {
         name: "GitHub",
         url: "https://github.com/AndresMarulanda10",
         icon: Icons.github,
-
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/carlos-andres-marulanda-rojas-amr/?locale=en_US",
         icon: Icons.linkedin,
-
         navbar: true,
       },
       email: {
         name: "Send Email",
         url: "mailto:andresmarulanda1027@icloud.com",
         icon: Icons.email,
-
         navbar: true,
       },
     },
@@ -72,23 +57,23 @@ export const DATA = {
       company: "Galleon",
       href: [],
       location: "New York, Remote",
-      title: "Chief Technology Officer (CTO)",
+      title: "Senior Software Architect",
       logoUrl: "/galleon_logo.svg",
       start: "September 2024",
       end: "Present",
       description:
-        "I lead the architecture and technological development of Galleon, managing a multidisciplinary team and designing large-scale solutions to optimize operations, logistics, sales and customer service. We implemented microservices, and complete internal productivity system.",
+        "Leading technology architecture and development for Galleon's core platform, managing an engineers team and designing scalable solutions for operations, logistics and customer service optimization.",
     },
     {
       company: "PRINFER (Industrial Oil & Gas Suppliers)",
       href: [],
       location: "Bogota, Capital District, Colombia",
-      title: "Chief Executive Officer (CEO)",
+      title: "Software Analyst and Developer",
       logoUrl: "/prinfer_logo.svg",
       start: "October 2023",
       end: "Present",
       description:
-        "I assumed the general management after the death of my father Cesar Marulanda. I redesigned the company's operations and implemented technological systems to digitalize commercial, inventory and customer service processes, incresing efficiency and profitability.",
+        "Leading digital transformation and business operations for industrial supply company, implementing custom technology solutions to modernize commercial processes and inventory management.",
     },
     {
       company: "CSI (Industrial Solutions Marketers)",
@@ -99,7 +84,7 @@ export const DATA = {
       start: "October 2023",
       end: "Present",
       description:
-        "Responsible for the technological redesign of the company, leading the modernization of systems, infrastructure and sales strategy through digital solutions, interacting new technologies to strengthen the operation and customer service.",
+        "I lead comprehesive technology modernization for industrial solutions company, implementing digital tools to enhance logistics traceability and customer service operations.",
     },
     {
       company: "AMR Industries",
@@ -110,7 +95,7 @@ export const DATA = {
       start: "January 2019",
       end: "Present",
       description:
-        "Company focused on software development and technological research. I led projects with the Colombian government (in alliance with German foundations), designing specialized solutions and analysis algorithms with emerging technologies such as Artificial Intelligence and Quantum Computing.",
+        "I founded and led software development company specializing in emerging technologies research and government project implementation. Directed multidisciplinary teams developing AI and Quantum Computing Solutions.",
     },
     {
       company: "IBM",
@@ -121,7 +106,7 @@ export const DATA = {
       start: "February 2021",
       end: "October 2022",
       description:
-        "During my advanced training fellowship, I participated in intensive academic programs in cybersecurity, big data and quantum computing. I developed real-world solutions together with IBM experts applying the acquired knowledge in personal and business projects.",
+        "Selected for IBM academic scholarship program focusing on cybersecurity, big data and quantum computing. Developed real-world solutions alongside IBM experts, applying advanced knowledge to personal and enterprise projects.",
     },
     {
       company: "Teleperformance",
@@ -129,8 +114,8 @@ export const DATA = {
       location: "United States, Hybrid",
       title: "Big Data Engineer",
       logoUrl: "/teleperformance_logo.svg",
-      start: "2021",
-      end: "2022",
+      start: "May 2020",
+      end: "January 2021",
       description:
         "Analysis and processing of volumes of data for clients in the BPO sector. Implementation of EETL pipelines, analysis of key metrics and report optimization for decision making.",
     },
@@ -161,7 +146,7 @@ export const DATA = {
       degree: "Engineer's Degree, Cybersecurity Professional",
       logoUrl: "/ibm_logo.svg",
       start: "April 2021",
-      end: "2023",
+      end: "October 2023",
     },
     {
       school: "Servicio Nacional de Aprendizaje - SENA",
@@ -184,19 +169,19 @@ export const DATA = {
     {
       title: "Centor",
       href: "https://github.com/AndresMarulanda10/Centor",
-      dates: "March 2025 - Present",
+      dates: "May 2024 - Present",
       active: true,
       description:
-        "An accessible and competitively priced solution that combines a user-friendly and intuitive interface with a user-centric experience. Centor is designed so that anyone, even without technical knowledge or automation experience, can feel comfortable using the platform as their own control center.",
+        "Centor is an open source management platform focused on task management, specially designed for tech startups looking to facilitate goal tracking, organize tasks in chronological order, keep their teams organized, and analyze employee performance based on data and qualities.",
       technologies: [
-        "Next.js",
+        "Expo",
         "Typescript",
         "Supabase",
-        "TailwindCSS",
-        "Stripe",
         "HeroUI",
+        "Docker",
         "Biome",
         "Bun",
+        "Big Data",
       ],
       links: [
         {
@@ -210,22 +195,19 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: 
-        "/./public/centor.jpg",
-      video: "",
+      image: "./centor_logo.svg",
+      // video: "",
     },
     {
       title: "Q.U.A.R.K",
-      dates: "October 2023 - Present",
+      dates: "October 2024 - July 2025",
       active: true,
       description:
-        "Advanced ERP system for Galleon specializing in logistics optimization and purchase/sales forecasting for Mercado Libre operations. Built with quantum prediction algorithms and Big Data analytics in a full-stack architecture, delivering intelligent inventory management and market trend predictions for enhanced e-commerce performance.",
+        "Customized ERP software tailored for an export and product sales company, incorporating data analysis, recommendation algorithms, and logistics and business management functionalities.",
       technologies: [
         "Next.js",
         "Typescript",
         "Supabase",
-        "TailwindCSS",
-        "Stripe",
         "HeroUI",
         "Docker",
         "Biome",
@@ -233,9 +215,92 @@ export const DATA = {
         "Quantum Computing",
         "Big Data",
         "Astro",
+        "Machine Learning",
+        "MCP",
+        "API's"
       ],
-      image: "/./public/centor.jpg",
-      video: "",
+      image: "./quark.svg",
+      // video: "",
+    },
+    {
+      title: "Triceo",
+      dates: "August 2023 - Present",
+      active: true,
+      description:
+        "Triceo is a multi-platform application for managing barbershops and barbers, optimizing all their processes, scheduling, visualization, customer attraction, automatic pricing, and implementation of artificial intelligence recognition to monitor haircuts.",
+      technologies: [
+        "Expo",
+        "Typescript",
+        "Supabase",
+        "Tailwind CSS",
+        "Docker",
+        "Biome",
+        "Node.js",
+        "Machine Learning",
+        "API's"
+      ],
+      image: "./quark.svg",
+      // video: "",
+    },
+    {
+      title: "Ancrar",
+      dates: "December 2023 - Present",
+      active: true,
+      description:
+        "Ancrar is a specialized mobile app for learning Spanish verbs with an interactive feature similar to, but innovative compared to, a card game. It is aimed at companies and individuals in the United States who want or need to learn Spanish in a simple and fun way.",
+      technologies: [
+        "Expo",
+        "Typescript",
+        "Supabase",
+        "Tailwind CSS",
+        "Docker",
+        "Biome",
+        "Node.js",
+        "Machine Learning",
+        "API's"
+      ],
+      image: "./quark.svg",
+      // video: "",
+    },
+    {
+      title: "ABIUDEA - PASIF",
+      dates: "July 2022 - October 2023",
+      active: false,
+      description:
+        "Abiudea - PASIF was an application developed with the support of the Colombian government and German investors. The application focused on high-impact rural areas in the country, aiming to meet the needs of residents using the system developed by ABIUDEA, PASIF. This application was a great initiative for the large percentage of people in the area with visual impairments.",
+      technologies: [
+        "Flutter",
+        "Dart",
+        "Supabase",
+        "Tailwind CSS",
+        "Docker",
+        "Biome",
+        "Node.js",
+        "Machine Learning",
+        "API's"
+      ],
+      image: "./quark.svg",
+      // video: "",
+    },
+    {
+      title: "E-Commerce Platform",
+      dates: "October 2023 - December 2023",
+      active: false,
+      description:
+        "The E-Commerce Platform was developed to facilitate online sales for small and medium-sized businesses in Colombia. It aimed to provide a user-friendly interface for both sellers and buyers, incorporating features such as product catalogs, shopping carts, and secure payment gateways.",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "Supabase",
+        "HeroUI",
+        "Docker",
+        "Biome",
+        "Bun",
+        "Big Data",
+        "API's"
+      ],
+      image: "./quark.svg",
+      // video: "",
     },
   ],
 } as const;
