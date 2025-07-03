@@ -44,18 +44,22 @@ export default function Page() {
           <h2 className="text-xl font-bold">About</h2>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
-          <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
-            {DATA.summary}
-          </Markdown>
-            </BlurFade>
-            <BlurFade delay={BLUR_FADE_DELAY * 4}>
-              <div className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert font-bold">
-                <div className="mt-3 p-2 bg-blue-100 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-900 text-sm">
-                  <Markdown className="prose prose-sm dark:prose-invert max-w-none text-blue-900 dark:text-blue-200">
-              {DATA.open_work}
-              </Markdown>
+          <div className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
+            <Markdown>
+              {DATA.summary}
+            </Markdown>
+          </div>
+        </BlurFade>
+        <BlurFade delay={BLUR_FADE_DELAY * 4}>
+          <div className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert font-bold">
+            <div className="mt-3 p-2 bg-blue-100 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-900 text-sm">
+              <div className="prose prose-sm dark:prose-invert max-w-none text-blue-900 dark:text-blue-200">
+                <Markdown>
+                  {DATA.open_work}
+                </Markdown>
+              </div>
             </div>
-            </div>
+          </div>
         </BlurFade>
       </section>
       <section id="work">
